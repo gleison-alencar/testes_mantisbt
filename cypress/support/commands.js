@@ -1,9 +1,9 @@
 Cypress.Commands.add('loginmantis', () => {
     cy.clearCookies()
     cy.visit('https://mantis-prova.base2.com.br')
-    cy.get('#username').type('gleison_alencar')
+    cy.get('#username').type('inserir_login')
     cy.get('.width-40').click()
-    cy.get('#password').type('Casa6022', { log: false })
+    cy.get('#password').type('inserir_senha', { log: false })
     cy.get('[type="submit"]').click()
 })
 

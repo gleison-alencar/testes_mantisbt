@@ -23,7 +23,7 @@ describe('Acessa MantisBT e manipula uma task', () => {
 
     // Inicia uma busca por task específica
     cy.get('.form-inline > .btn-group > .btn').click();
-    cy.get('#filter-search-txt').type('0001828');
+    cy.get('#filter-search-txt').type('inserir_id_da_task_desejada');
     cy.wait(1000); // Espera explícita para garantir a busca
 
     cy.get('.btn-toolbar > .form-inline > .btn').click();
